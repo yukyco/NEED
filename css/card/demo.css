@@ -1,0 +1,199 @@
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: normal;
+	font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+body {
+	font-family: "Montserrat", sans-serif;
+	line-height: 1;
+	color: #3b393d;
+	background: #f0f0f0;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+body.body--hidden {
+	overflow: hidden;
+}
+
+body.body--hidden .codrops-header,
+body.body--hidden .content--related {
+	opacity: 0;
+}
+
+.sept2-header,
+.content--related {
+	-webkit-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+    background-color: black;
+}
+
+a {
+	text-decoration: none;
+	color: #de6551;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #3b393d;
+}
+
+
+.about {
+	background: #acaad1;
+	margin-top: -30px;
+}
+
+.about a {
+	color: #6448a0;
+}
+
+.about .sept2-header h1 span {
+	color: #4f4c4c;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+
+/* Top Navigation Style -> deleted -->
+
+
+/* Content 端によるため削除
+
+.content {
+	padding: 1em 0 4em;
+}
+.container {
+	margin: 0; 
+} */
+
+#footer {
+	  min-height: 100px;
+	  width: 101%;
+	  background-image: url(../img/bg_1.png);
+	  background-size: cover;
+	  padding-top: 50px;
+	  line-height: 1.0;
+	  font-size: 85%;
+	  margin: 0 auto;
+}
+
+#footer .inner {
+	margin: 0 auto;
+	width: 800px;
+}
+
+#footer a {
+	  color : #ffffff; 
+}
+
+p#copyright {
+	margin: 0;
+	color: #ffffff;
+	text-align: right;
+}
+
+ul#footnav {
+   margin: 0;
+   padding: 0;
+   }
+  
+ul#footnav li {
+   float: left;
+   display: block;
+   padding: 0 10px;
+   border-left: 0;
+   border-left: 1px solid #ffffff;
+} 
+
+ul#footnav > li:first-child {
+    padding-left: 0;
+	border-left: none;
+	}
+
+/* Related demos  footer 
+.content--related {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 250px;
+	margin-bottom: -110px;
+	background-color: #fff;
+}
+*/
+.media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	-webkit-transition: color .3s;
+	transition: color .3s;
+}
+
+.media-item__img {
+	max-width: 100%;
+	opacity: .3;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+	opacity: 1;
+}
+
+.media-item__title {
+	font-size: 1em;
+	margin: 0;
+	padding: .5em;
+}
+
+/* cards wrapper and close btn */
+
+.wrapper {
+	overflow: auto;
+	width: 95%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 50em) {
+	.sept2-header {
+		padding: 3em 10% 4em;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.sept2-header h1 {
+		font-size: 2.4em;
+		line-height: 1.2;
+	}
+}
+
